@@ -6,7 +6,7 @@ try:
     from django.utils.encoding import force_text
 except ImportError:
     # BBB: Django 1.4
-    from django.utils.encoding import force_unicode as force_text
+    from django.utils.encoding import force_str as force_text
 
 
 class JSONArgonautsEncoder(DjangoJSONEncoder):
